@@ -52,7 +52,7 @@ app.use(cookieparser);
 
 //Testing connection
 const date = Date();
-const port = 3003;
+const port = process.env.PORT || 3003;
 app.listen(port, () => {
   // console.log(date);
   console.log(`Backend is running at port ${port}`);
